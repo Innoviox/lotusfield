@@ -3,6 +3,6 @@
     <th>Decks</th>
   </tr>
   <tr *ngFor="let deck of this.decks">
-    <td><a [routerLink]="['/decks.json', deck.id]" [state]="deck">{{deck.name}}</a></td>
+    <td><a [routerLink]="['/decks', deck.id]" [state]="deck">{{deck.name}}</a></td>
   </tr>
 </table>

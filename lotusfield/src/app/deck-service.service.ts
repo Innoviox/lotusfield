@@ -7,7 +7,7 @@ import {HttpClient} from "@angular/common/http";
   providedIn: 'root'
 })
 export class DeckService {
-  url = "decks.json";
+  url = "assets/decks.json";
 
   constructor(private http: HttpClient) { }
 
