@@ -1,1 +1,11 @@
-<p>deck-detail works!</p>
+<div *ngIf="deck">
+  <h2>{{deck?.name}}</h2>
+  <table>
+    <tr>
+      <th>Cards</th>
+    </tr>
+    <tr *ngFor="let card of deck?.cards">
+      <td><span>{{deck.name}}</span></td>
+    </tr>
+  </table>
+</div>
