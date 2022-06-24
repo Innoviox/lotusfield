@@ -5,7 +5,7 @@ import {DeckComponent} from "./deck/deck.component";
 
 const routes: Routes = [
   { path: 'decks/:id', component: DeckDetailComponent },
-  { path: 'decks', component: DeckComponent }
+  { path: '', component: DeckComponent },
 ];
 
 @NgModule({
