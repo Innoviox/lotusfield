@@ -1,8 +1,8 @@
 <table>
   <tr>
-    <th>Card Name</th>
+    <th>Decks</th>
   </tr>
-  <tr *ngFor="let card of this.cards">
-    <td><span>{{card.name}}</span></td>
+  <tr *ngFor="let deck of this.decks">
+    <td><a [routerLink]="['/decks', deck.id]">{{deck.name}}</a></td>
   </tr>
 </table>
