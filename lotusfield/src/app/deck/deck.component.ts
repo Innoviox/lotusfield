@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {ICard} from "../icard";
+import {IDeck} from "../ideck";
 
 @Component({
   selector: 'app-deck',
@@ -7,10 +8,10 @@ import {ICard} from "../icard";
   styleUrls: ['./deck.component.less']
 })
 export class DeckComponent implements OnInit {
-  cards: ICard[]
+  decks: IDeck[]
 
   constructor() {
-    this.cards = [{"name": "Rith, the Awakener"}];
+    this.decks = [{id: 1, name: "Rith", cards: [{"name": "Rith, the Awakener"}]}];
   }
 
   ngOnInit(): void {
